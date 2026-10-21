@@ -1,0 +1,7 @@
+<resources>
+<string name="setup_keyboard">键盘</string>
+<string name="setup_enabled">已启用</string>
+<string name="setup_disabled">尚未启用，请先开启 LingWing Keyboard</string>
+<string name="setup_selected">正在使用 LingWing Keyboard</string>
+<string name="setup_select">切换到 LingWing Keyboard 输入法</string>
+</resources>

@@ -1,0 +1,531 @@
+{
+  "version": "0.3.0",
+  "language_category_count": 59,
+  "layout_count": 77,
+  "categories": [
+    "ar",
+    "ast",
+    "az",
+    "bg",
+    "bn",
+    "ca",
+    "ckb",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eo",
+    "es",
+    "fa",
+    "fi",
+    "fil",
+    "fo",
+    "fr",
+    "he",
+    "hi",
+    "hoc",
+    "hr",
+    "hu",
+    "hy",
+    "iban",
+    "id",
+    "ig",
+    "is",
+    "it",
+    "ja",
+    "ka",
+    "kab",
+    "ko",
+    "ku",
+    "lt",
+    "lv",
+    "ms",
+    "nb",
+    "nl",
+    "nn",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "rue",
+    "sk",
+    "sl",
+    "sr",
+    "sv",
+    "sw",
+    "ta",
+    "th",
+    "tr",
+    "udm",
+    "uk",
+    "ur",
+    "vi",
+    "zh"
+  ],
+  "layouts": [
+    {
+      "id": "en",
+      "tag": "en",
+      "engine": "direct",
+      "label": "English"
+    },
+    {
+      "id": "zh",
+      "tag": "zh",
+      "engine": "pinyin",
+      "label": "中文（简体）"
+    },
+    {
+      "id": "ja",
+      "tag": "ja",
+      "engine": "kana",
+      "label": "日本語"
+    },
+    {
+      "id": "ko",
+      "tag": "ko",
+      "engine": "hangul",
+      "label": "한국어"
+    },
+    {
+      "id": "vi",
+      "tag": "vi",
+      "engine": "telex",
+      "label": "Tiếng Việt"
+    },
+    {
+      "id": "th",
+      "tag": "th",
+      "engine": "direct",
+      "label": "ไทย"
+    },
+    {
+      "id": "ru",
+      "tag": "ru",
+      "engine": "direct",
+      "label": "Русский"
+    },
+    {
+      "id": "uk",
+      "tag": "uk",
+      "engine": "direct",
+      "label": "Українська"
+    },
+    {
+      "id": "ar",
+      "tag": "ar",
+      "engine": "direct",
+      "label": "العربية"
+    },
+    {
+      "id": "el",
+      "tag": "el",
+      "engine": "direct",
+      "label": "Ελληνικά"
+    },
+    {
+      "id": "he",
+      "tag": "he",
+      "engine": "direct",
+      "label": "עברית"
+    },
+    {
+      "id": "en-US",
+      "tag": "en-US",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "en-UK",
+      "tag": "en-UK",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "en-CA",
+      "tag": "en-CA",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "en-AU",
+      "tag": "en-AU",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "de-DE",
+      "tag": "de-DE",
+      "engine": "direct",
+      "label": "qwertz"
+    },
+    {
+      "id": "de-AT",
+      "tag": "de-AT",
+      "engine": "direct",
+      "label": "qwertz"
+    },
+    {
+      "id": "de-CH",
+      "tag": "de-CH",
+      "engine": "direct",
+      "label": "swiss_german"
+    },
+    {
+      "id": "de-DE-neobone",
+      "tag": "de-DE-neobone",
+      "engine": "direct",
+      "label": "neo2"
+    },
+    {
+      "id": "fr-FR",
+      "tag": "fr-FR",
+      "engine": "direct",
+      "label": "azerty"
+    },
+    {
+      "id": "fr-CA",
+      "tag": "fr-CA",
+      "engine": "direct",
+      "label": "canadian_french"
+    },
+    {
+      "id": "fr-CH",
+      "tag": "fr-CH",
+      "engine": "direct",
+      "label": "swiss_french"
+    },
+    {
+      "id": "it-IT",
+      "tag": "it-IT",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "it-CH",
+      "tag": "it-CH",
+      "engine": "direct",
+      "label": "swiss_italian"
+    },
+    {
+      "id": "es-ES",
+      "tag": "es-ES",
+      "engine": "direct",
+      "label": "spanish"
+    },
+    {
+      "id": "es-US",
+      "tag": "es-US",
+      "engine": "direct",
+      "label": "spanish"
+    },
+    {
+      "id": "es-419",
+      "tag": "es-419",
+      "engine": "direct",
+      "label": "spanish"
+    },
+    {
+      "id": "pt-PT",
+      "tag": "pt-PT",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "pt-BR",
+      "tag": "pt-BR",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "nb-NO",
+      "tag": "nb-NO",
+      "engine": "direct",
+      "label": "norwegian"
+    },
+    {
+      "id": "nn-NO",
+      "tag": "nn-NO",
+      "engine": "direct",
+      "label": "norwegian"
+    },
+    {
+      "id": "sv-SE",
+      "tag": "sv-SE",
+      "engine": "direct",
+      "label": "swedish_finnish"
+    },
+    {
+      "id": "fi-FI",
+      "tag": "fi-FI",
+      "engine": "direct",
+      "label": "swedish_finnish"
+    },
+    {
+      "id": "da-DK",
+      "tag": "da-DK",
+      "engine": "direct",
+      "label": "danish"
+    },
+    {
+      "id": "id",
+      "tag": "id",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "is-IS",
+      "tag": "is-IS",
+      "engine": "direct",
+      "label": "icelandic"
+    },
+    {
+      "id": "fo",
+      "tag": "fo",
+      "engine": "direct",
+      "label": "faroese"
+    },
+    {
+      "id": "fa-FA",
+      "tag": "fa-FA",
+      "engine": "direct",
+      "label": "persian"
+    },
+    {
+      "id": "fa-FA-persian2",
+      "tag": "fa-FA",
+      "engine": "direct",
+      "label": "persian2"
+    },
+    {
+      "id": "fa-FA-persian3",
+      "tag": "fa-FA",
+      "engine": "direct",
+      "label": "persian3"
+    },
+    {
+      "id": "az",
+      "tag": "az",
+      "engine": "direct",
+      "label": "azerbaijani"
+    },
+    {
+      "id": "hu",
+      "tag": "hu",
+      "engine": "direct",
+      "label": "hungarian"
+    },
+    {
+      "id": "eo",
+      "tag": "eo",
+      "engine": "direct",
+      "label": "esperanto"
+    },
+    {
+      "id": "hr",
+      "tag": "hr",
+      "engine": "direct",
+      "label": "qwertz"
+    },
+    {
+      "id": "hy",
+      "tag": "hy",
+      "engine": "direct",
+      "label": "armenian_alt_phonetic"
+    },
+    {
+      "id": "ka-GE",
+      "tag": "ka-GE",
+      "engine": "direct",
+      "label": "georgian_standard"
+    },
+    {
+      "id": "rue",
+      "tag": "rue",
+      "engine": "direct",
+      "label": "rusyn"
+    },
+    {
+      "id": "ro",
+      "tag": "ro",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "pl",
+      "tag": "pl",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "bg-bg",
+      "tag": "bg-bg",
+      "engine": "direct",
+      "label": "bulgarian_phonetic"
+    },
+    {
+      "id": "tr",
+      "tag": "tr",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "he-IL",
+      "tag": "he-IL",
+      "engine": "direct",
+      "label": "hebrew"
+    },
+    {
+      "id": "ckb",
+      "tag": "ckb",
+      "engine": "direct",
+      "label": "kurdish"
+    },
+    {
+      "id": "sr-RS",
+      "tag": "sr-RS",
+      "engine": "direct",
+      "label": "serbian_cyrillic"
+    },
+    {
+      "id": "sl-SI",
+      "tag": "sl-SI",
+      "engine": "direct",
+      "label": "slovenian"
+    },
+    {
+      "id": "lv-LV",
+      "tag": "lv-LV",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "ku",
+      "tag": "ku",
+      "engine": "direct",
+      "label": "kurdish_kurmanci"
+    },
+    {
+      "id": "ca",
+      "tag": "ca",
+      "engine": "direct",
+      "label": "catalan"
+    },
+    {
+      "id": "sk",
+      "tag": "sk",
+      "engine": "direct",
+      "label": "qwertz"
+    },
+    {
+      "id": "cs",
+      "tag": "cs",
+      "engine": "direct",
+      "label": "qwertz"
+    },
+    {
+      "id": "lt-LT",
+      "tag": "lt-LT",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "th-kd",
+      "tag": "th-kd",
+      "engine": "direct",
+      "label": "thai_kedmanee"
+    },
+    {
+      "id": "ig-NG",
+      "tag": "ig-NG",
+      "engine": "direct",
+      "label": "igbo"
+    },
+    {
+      "id": "hoc",
+      "tag": "hoc",
+      "engine": "direct",
+      "label": "warang_citi"
+    },
+    {
+      "id": "udm",
+      "tag": "udm",
+      "engine": "direct",
+      "label": "udmurt_extended"
+    },
+    {
+      "id": "ur-PK",
+      "tag": "ur-PK",
+      "engine": "direct",
+      "label": "urdu_phonetic"
+    },
+    {
+      "id": "bn-BD",
+      "tag": "bn-BD",
+      "engine": "direct",
+      "label": "bengali_unijoy"
+    },
+    {
+      "id": "bn-IN",
+      "tag": "bn-IN",
+      "engine": "direct",
+      "label": "bengali_unijoy"
+    },
+    {
+      "id": "hi-IN",
+      "tag": "hi-IN",
+      "engine": "direct",
+      "label": "hindi_in"
+    },
+    {
+      "id": "ast",
+      "tag": "ast",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "ta-lk",
+      "tag": "ta-lk",
+      "engine": "direct",
+      "label": "tamil"
+    },
+    {
+      "id": "kab",
+      "tag": "kab",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "ms",
+      "tag": "ms",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "iban",
+      "tag": "iban",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "fil",
+      "tag": "fil",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "sw",
+      "tag": "sw",
+      "engine": "direct",
+      "label": "qwerty"
+    },
+    {
+      "id": "nl",
+      "tag": "nl",
+      "engine": "direct",
+      "label": "qwerty"
+    }
+  ],
+  "scope": "Common-language release. Not worldwide-complete or equivalent to Gboard; direct layouts lack predictive dictionaries. Japanese offers word-level conversion, not full-sentence Mozc conversion."
+}

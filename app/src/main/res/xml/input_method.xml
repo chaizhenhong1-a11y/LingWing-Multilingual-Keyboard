@@ -1,0 +1,3 @@
+<input-method xmlns:android="http://schemas.android.com/apk/res/android" android:settingsActivity="com.lazytalk.keyboard.SettingsActivity" android:supportsSwitchingToNextInputMethod="true">
+    <subtype android:label="@string/app_name" android:imeSubtypeLocale="en_US" android:imeSubtypeMode="keyboard" android:isAsciiCapable="true"/>
+</input-method>

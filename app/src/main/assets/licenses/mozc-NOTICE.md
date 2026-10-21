@@ -1,0 +1,13 @@
+# Mozc dictionary data
+Upstream: https://github.com/google/mozc/tree/master/src/data/dictionary_oss
+Modified: retain readings <=20 code points and word costs <=8000, merge duplicates by minimum cost, emit reading/surface/cost UTF-8 TSV. No Mozc engine code is included. Original license and dictionary README notices are preserved. This is word lookup, not the full Mozc statistical converter.
+dictionary00.txt: SHA256 9e07ce292932c4fff327ed8cb06274c09acca556bd8bdf7c7ef1f6173eae3b61
+dictionary01.txt: SHA256 836fd5fd8399510de0d8ef7b33be913cca6bbaee7b712cc8045fba03f4c75a89
+dictionary02.txt: SHA256 93943858d0cfd092b849a78def6901eaf228177e1ac5663544e865a3a1e45a9e
+dictionary03.txt: SHA256 cb9f1b0b4a7550d682d86244a021cd17e0b15366328819e69135b5f183a1a24b
+dictionary04.txt: SHA256 9fdc4e3948d03463de13ab5782adffbc11dd06e934cb80138c5920029cd3d2f6
+dictionary05.txt: SHA256 199e3b0f050b691823ae7ba943090d437f51af6436b27c5f3dc69cafa12000e4
+dictionary06.txt: SHA256 b95b14f7770ae2a824bc8e9fad8b03c1bc45c504f93a36554b8b56daa0368d2a
+dictionary07.txt: SHA256 7f53649b529d4c8c495d3a8dd9c4d489dfe7696080f7423107ff01331174be48
+dictionary08.txt: SHA256 50a31bb5fc1646721b00be371a5695dffab1292bda143e1e59cc70cbbdd8643f
+dictionary09.txt: SHA256 4e5fcd4cbfbf11395166a37b506f547fc54d20edc0884f5184ecd3fc705f0d9a

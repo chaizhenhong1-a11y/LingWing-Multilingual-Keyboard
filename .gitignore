@@ -1,0 +1,21 @@
+.gradle/
+.kotlin/
+**/build/
+local.properties
+.idea/
+.sandbox-tools/
+*.jks
+*.keystore
+.env
+__pycache__/
+backend/*.log
+
+# Generated packages and local credentials
+*.apk
+*.aab
+*.log
+.env.*
+!.env.example
+*service-account*.json
+credentials.json
+

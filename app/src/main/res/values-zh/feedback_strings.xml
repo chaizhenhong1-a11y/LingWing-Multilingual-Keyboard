@@ -1,0 +1,1 @@
+<resources><string name="key_vibration">按键震动</string><string name="key_vibration_description">打字时轻微震动，开启开关时会轻震一次</string><string name="key_vibration_strength">震动强度</string><string name="key_vibration_preview">选择后立即试震</string><string name="key_vibration_light">轻</string><string name="key_vibration_standard">标准</string><string name="key_vibration_strong">强</string></resources>

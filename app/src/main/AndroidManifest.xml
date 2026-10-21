@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <application android:name=".app.LazyTalkApplication" android:icon="@mipmap/ic_lingwing" android:allowBackup="false" android:fullBackupContent="false" android:dataExtractionRules="@xml/data_extraction_rules" android:supportsRtl="true" android:label="@string/app_name" android:theme="@style/AppTheme" android:usesCleartextTraffic="false">
+        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+        <activity-alias android:name=".SettingsActivity" android:targetActivity=".MainActivity" android:exported="true" android:label="@string/app_name"/>
+        <service android:name=".feature.keyboard.ime.LazyTalkInputMethodService" android:label="@string/app_name" android:permission="android.permission.BIND_INPUT_METHOD" android:exported="true">
+            <intent-filter><action android:name="android.view.InputMethod"/></intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/input_method"/>
+        </service>
+    </application>
+</manifest>

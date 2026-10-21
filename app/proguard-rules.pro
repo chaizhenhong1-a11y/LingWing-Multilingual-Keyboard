@@ -1,0 +1,1 @@
+-keep class com.lazytalk.keyboard.core.network.dto.** { *; }

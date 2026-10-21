@@ -31,3 +31,6 @@ The prior vibration issue was traced to system touch feedback being OFF; version
 
 ### Local Firebase login configuration
 Set `lazytalk.authKey=YOUR_FIREBASE_AUTH_API_KEY` in ignored `local.properties`, or pass it through a private Gradle property. Never commit actual API keys.
+
+### Server source
+This repository contains the Android client. The production backend is private. Cloning this client does not grant access to the hosted translation service; server authentication and quotas still apply.

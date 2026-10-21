@@ -19,3 +19,6 @@ backend/*.log
 *service-account*.json
 credentials.json
 
+
+# Private server maintained outside the public repository
+/backend/

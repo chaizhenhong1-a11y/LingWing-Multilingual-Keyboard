@@ -23,7 +23,11 @@ android {
     val cloudUrl = providers.gradleProperty("lazytalk.cloudUrl").orElse("").get()
     require(cloudUrl.isEmpty() || cloudUrl.matches(Regex("https://[a-z0-9.-]+")))
     defaultConfig { buildConfigField("String", "CLOUD_BACKEND_URL", "\"$cloudUrl\"") }
-    val authKey = providers.gradleProperty("lazytalk.authKey").orElse("").get()
+    val localConfig = java.util.Properties().apply {
+        rootProject.file("local.properties").takeIf { it.isFile }?.inputStream()?.use { load(it) }
+    }
+    val authKey = providers.gradleProperty("lazytalk.authKey").orNull
+        ?: localConfig.getProperty("lazytalk.authKey", "")
     require(authKey.isEmpty() || authKey.matches(Regex("[A-Za-z0-9_-]{20,100}")))
     defaultConfig { buildConfigField("String", "AUTH_API_KEY", "\"$authKey\"") }
     val googleClientId = providers.gradleProperty("lazytalk.googleClientId").orElse("").get()

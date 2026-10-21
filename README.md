@@ -28,3 +28,6 @@ Package/IME identifiers and the cloud service address remain stable for upgrade 
 
 Version 0.5.3 passed 124 Android tests, assembleDebug, lintDebug, APK alignment and signing checks. It was installed successfully on the connected HONOR X9c.
 The prior vibration issue was traced to system touch feedback being OFF; version 0.5.3 uses a short motor pulse controlled by the app setting. Motor perception should be confirmed by trying the keyboard on the phone.
+
+### Local Firebase login configuration
+Set `lazytalk.authKey=YOUR_FIREBASE_AUTH_API_KEY` in ignored `local.properties`, or pass it through a private Gradle property. Never commit actual API keys.

@@ -36,6 +36,28 @@ class KeyboardViewModelTest {
         assertEquals(listOf("zh","zh"),effects.filterIsInstance<KeyboardEffect.Commit>().map { it.text })
         assertFalse(effects.any { it==KeyboardEffect.Enter })
     }
+    @Test fun pinyinStaysInsideKeyboardUntilExplicitCommitAndBackspaceDoesNotTouchHost() = runTest(dispatcher) {
+        val suggestions=object : com.lazytalk.keyboard.feature.keyboard.domain.TypingSuggestions {
+            override fun candidates(engine: String,input: String)=listOf("这",input)
+        }
+        val vm=KeyboardViewModel(FakeSettings(),FakeLanguages(),TranslateTextUseCase(repository),typing=suggestions)
+        runCurrent();vm.dispatch(KeyboardAction.PickLayout("zh"));runCurrent()
+        val effects=mutableListOf<KeyboardEffect>()
+        backgroundScope.launch(UnconfinedTestDispatcher(testScheduler)) { vm.effects.collect { effects+=it } }
+        "zh".forEach { vm.dispatch(KeyboardAction.Key(it.toString())) }
+        vm.state.first { "这" in it.typingCandidates }
+        assertEquals("zh",vm.state.value.composition)
+        assertTrue(effects.isEmpty())
+        vm.dispatch(KeyboardAction.Backspace)
+        vm.dispatch(KeyboardAction.Backspace)
+        runCurrent()
+        assertEquals("",vm.state.value.composition)
+        assertTrue(effects.isEmpty())
+        "zh".forEach { vm.dispatch(KeyboardAction.Key(it.toString())) }
+        vm.state.first { "这" in it.typingCandidates }
+        vm.dispatch(KeyboardAction.TypingCandidate("这"));runCurrent()
+        assertEquals(listOf(KeyboardEffect.Commit("这")),effects)
+    }
     @Test fun pinyinEnterInTranslationDraftInsertsLettersAtCaret() = runTest(dispatcher) {
         val vm=model(repository)
         runCurrent();vm.importDraft("ab")

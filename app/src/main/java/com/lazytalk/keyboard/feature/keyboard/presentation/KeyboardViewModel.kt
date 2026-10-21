@@ -30,7 +30,7 @@ class KeyboardViewModel(private val settingsRepo: SettingsRepository, private va
     private fun updateComposition() {
         val revision=++typingRevision;typingJob?.cancel()
         val display=typingDisplay();val engine=state.value.typingLayout.engine;val input=typingInput
-        if(!state.value.draftMode) effect(KeyboardEffect.Composing(display))
+        if(!state.value.draftMode && engine!="pinyin") effect(KeyboardEffect.Composing(display))
         mutable.update { it.copy(composition=display, typingCandidates=emptyList(), typingLoading=input.isNotEmpty(), typingError=null) }
         if(input.isEmpty())return
         typingJob=viewModelScope.launch {

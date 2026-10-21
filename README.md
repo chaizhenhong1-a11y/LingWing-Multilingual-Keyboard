@@ -2,7 +2,7 @@
 
 Native Android multilingual keyboard with offline typing engines and account-based OpenAI translation.
 
-**Latest APK:** `LingWing-debug.apk` — **0.5.5 (40)**.
+**Latest APK:** `LingWing-debug.apk` — **0.5.6 (41)**.
 
 ## Project structure
 
@@ -26,5 +26,5 @@ Package/IME identifiers and the cloud service address remain stable for upgrade 
 
 ## Verification
 
-Version 0.5.3 passed 123 Android tests, assembleDebug, lintDebug, APK alignment and signing checks. It was installed successfully on the connected HONOR X9c.
+Version 0.5.3 passed 124 Android tests, assembleDebug, lintDebug, APK alignment and signing checks. It was installed successfully on the connected HONOR X9c.
 The prior vibration issue was traced to system touch feedback being OFF; version 0.5.3 uses a short motor pulse controlled by the app setting. Motor perception should be confirmed by trying the keyboard on the phone.
